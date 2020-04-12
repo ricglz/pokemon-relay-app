@@ -7,11 +7,13 @@ import {
   Variables
 } from 'relay-runtime';
 
+const url = 'https://graphql-pokemon.now.sh/'
+
 function fetchQuery(
   operation: RequestParameters,
   variables: Variables,
 ) {
-  return fetch('https://graphql-pokemon.now.sh/', {
+  return fetch(url, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
