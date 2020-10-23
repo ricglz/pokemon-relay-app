@@ -1,7 +1,8 @@
 import PokemonList from './PokemonList';
 import React from 'react';
 import environment from './relay-env';
-import { graphql, QueryRenderer } from 'react-relay';
+import { QueryRenderer } from 'react-relay';
+import { graphql } from 'babel-plugin-relay/macro';
 
 const query = graphql`
   query AppQuery($first: Int!){
@@ -26,7 +27,7 @@ const renderComponent = ({ error, props }: Props) => {
 function App() {
   return (
     <QueryRenderer
-      environment={environment}
+      environment={environment as any}
       query={query}
       render={renderComponent}
       variables={{ first: 10 }}

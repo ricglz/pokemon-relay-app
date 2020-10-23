@@ -1,7 +1,8 @@
 import PokemonDetails from './PokemonDetails';
 import React from 'react';
 import { PokemonList_query } from './__generated__/PokemonList_query.graphql';
-import { graphql, createFragmentContainer } from 'react-relay';
+import { createFragmentContainer } from 'react-relay';
+import { graphql } from 'babel-plugin-relay/macro';
 
 interface Props {
   query: PokemonList_query | null;
