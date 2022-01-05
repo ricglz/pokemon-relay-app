@@ -19,10 +19,6 @@ export type PokemonList_query$key = {
 
 
 const node: ReaderFragment = {
-  "kind": "Fragment",
-  "name": "PokemonList_query",
-  "type": "Query",
-  "metadata": null,
   "argumentDefinitions": [
     {
       "kind": "RootArgument",
@@ -30,12 +26,12 @@ const node: ReaderFragment = {
       "type": "Int!"
     }
   ],
+  "kind": "Fragment",
+  "metadata": null,
+  "name": "PokemonList_query",
   "selections": [
     {
-      "kind": "LinkedField",
       "alias": null,
-      "name": "pokemons",
-      "storageKey": null,
       "args": [
         {
           "kind": "Variable",
@@ -44,23 +40,27 @@ const node: ReaderFragment = {
         }
       ],
       "concreteType": "Pokemon",
+      "kind": "LinkedField",
+      "name": "pokemons",
       "plural": true,
       "selections": [
         {
-          "kind": "ScalarField",
           "alias": null,
-          "name": "id",
           "args": null,
+          "kind": "ScalarField",
+          "name": "id",
           "storageKey": null
         },
         {
+          "args": null,
           "kind": "FragmentSpread",
-          "name": "PokemonDetails_pokemon",
-          "args": null
+          "name": "PokemonDetails_pokemon"
         }
-      ]
+      ],
+      "storageKey": null
     }
-  ]
+  ],
+  "type": "Query"
 };
 (node as any).hash = '8b67ff9374974152b782c4bd4c302bdb';
 export default node;

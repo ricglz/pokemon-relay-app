@@ -45,6 +45,7 @@
     "@types/relay-runtime": "^8.0.8",
     "graphql": "^15.0.0",
     "relay-compiler": "^9.0.0",
-    "relay-compiler-language-typescript": "^12.0.0"
+    "relay-compiler-language-typescript": "^12.0.0",
+    "relay-config": "^12.0.1"
   }
 }

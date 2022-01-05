@@ -1,6 +1,5 @@
 /* tslint:disable */
 /* eslint-disable */
-/* @relayHash 9992c9fe0d8e959bfe8893965dcf73a1 */
 
 import { ConcreteRequest } from "relay-runtime";
 import { FragmentRefs } from "relay-runtime";
@@ -41,38 +40,35 @@ fragment PokemonList_query on Query {
 const node: ConcreteRequest = (function(){
 var v0 = [
   {
+    "defaultValue": null,
     "kind": "LocalArgument",
     "name": "first",
-    "type": "Int!",
-    "defaultValue": null
+    "type": "Int!"
   }
 ];
 return {
-  "kind": "Request",
   "fragment": {
-    "kind": "Fragment",
-    "name": "AppQuery",
-    "type": "Query",
-    "metadata": null,
     "argumentDefinitions": (v0/*: any*/),
+    "kind": "Fragment",
+    "metadata": null,
+    "name": "AppQuery",
     "selections": [
       {
+        "args": null,
         "kind": "FragmentSpread",
-        "name": "PokemonList_query",
-        "args": null
+        "name": "PokemonList_query"
       }
-    ]
+    ],
+    "type": "Query"
   },
+  "kind": "Request",
   "operation": {
+    "argumentDefinitions": (v0/*: any*/),
     "kind": "Operation",
     "name": "AppQuery",
-    "argumentDefinitions": (v0/*: any*/),
     "selections": [
       {
-        "kind": "LinkedField",
         "alias": null,
-        "name": "pokemons",
-        "storageKey": null,
         "args": [
           {
             "kind": "Variable",
@@ -81,39 +77,42 @@ return {
           }
         ],
         "concreteType": "Pokemon",
+        "kind": "LinkedField",
+        "name": "pokemons",
         "plural": true,
         "selections": [
           {
-            "kind": "ScalarField",
             "alias": null,
+            "args": null,
+            "kind": "ScalarField",
             "name": "id",
-            "args": null,
             "storageKey": null
           },
           {
-            "kind": "ScalarField",
             "alias": null,
+            "args": null,
+            "kind": "ScalarField",
             "name": "name",
-            "args": null,
             "storageKey": null
           },
           {
-            "kind": "ScalarField",
             "alias": null,
-            "name": "number",
             "args": null,
+            "kind": "ScalarField",
+            "name": "number",
             "storageKey": null
           }
-        ]
+        ],
+        "storageKey": null
       }
     ]
   },
   "params": {
-    "operationKind": "query",
-    "name": "AppQuery",
     "id": null,
-    "text": "query AppQuery(\n  $first: Int!\n) {\n  ...PokemonList_query\n}\n\nfragment PokemonDetails_pokemon on Pokemon {\n  id\n  name\n  number\n}\n\nfragment PokemonList_query on Query {\n  pokemons(first: $first) {\n    id\n    ...PokemonDetails_pokemon\n  }\n}\n",
-    "metadata": {}
+    "metadata": {},
+    "name": "AppQuery",
+    "operationKind": "query",
+    "text": "query AppQuery(\n  $first: Int!\n) {\n  ...PokemonList_query\n}\n\nfragment PokemonDetails_pokemon on Pokemon {\n  id\n  name\n  number\n}\n\nfragment PokemonList_query on Query {\n  pokemons(first: $first) {\n    id\n    ...PokemonDetails_pokemon\n  }\n}\n"
   }
 };
 })();

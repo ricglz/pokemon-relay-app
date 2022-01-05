@@ -3368,7 +3368,7 @@ core-util-is@1.0.2, core-util-is@~1.0.0:
   resolved "https://registry.yarnpkg.com/core-util-is/-/core-util-is-1.0.2.tgz#b5fd54220aa2bc5ab57aab7140c940754503c1a7"
   integrity sha1-tf1UIgqivFq1eqtxQMlAdUUDwac=
 
-cosmiconfig@^5.0.0, cosmiconfig@^5.2.1:
+cosmiconfig@^5.0.0, cosmiconfig@^5.0.5, cosmiconfig@^5.2.1:
   version "5.2.1"
   resolved "https://registry.yarnpkg.com/cosmiconfig/-/cosmiconfig-5.2.1.tgz#040f726809c591e77a17c0a3626ca45b4f168b1a"
   integrity sha512-H65gsXo1SKjf8zmrJ67eJk8aIRKV5ff2D4uKZIBZShbhGSpEmsQOPW/SKMKYhSTrqR7ufy6RP69rPogdaPh/kA==
@@ -9259,6 +9259,13 @@ relay-compiler@^9.0.0:
     relay-runtime "9.1.0"
     signedsource "^1.0.0"
     yargs "^14.2.0"
+
+relay-config@^12.0.1:
+  version "12.0.1"
+  resolved "https://registry.yarnpkg.com/relay-config/-/relay-config-12.0.1.tgz#852ddfe22081b837ce4d2282dffd4dbe75f34c67"
+  integrity sha512-vq7GLLsGPpb/tZr9kmfbfe5sLO1cGa67jpCp4Xtk+N98fMInCu9YIH8R/FxxUhKVPnpLQf3ecmz+s+/MjzcnTQ==
+  dependencies:
+    cosmiconfig "^5.0.5"
 
 relay-runtime@9.1.0:
   version "9.1.0"

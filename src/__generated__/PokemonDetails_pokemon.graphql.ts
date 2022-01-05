@@ -18,34 +18,34 @@ export type PokemonDetails_pokemon$key = {
 
 
 const node: ReaderFragment = {
-  "kind": "Fragment",
-  "name": "PokemonDetails_pokemon",
-  "type": "Pokemon",
-  "metadata": null,
   "argumentDefinitions": [],
+  "kind": "Fragment",
+  "metadata": null,
+  "name": "PokemonDetails_pokemon",
   "selections": [
     {
-      "kind": "ScalarField",
       "alias": null,
+      "args": null,
+      "kind": "ScalarField",
       "name": "id",
-      "args": null,
       "storageKey": null
     },
     {
-      "kind": "ScalarField",
       "alias": null,
+      "args": null,
+      "kind": "ScalarField",
       "name": "name",
-      "args": null,
       "storageKey": null
     },
     {
-      "kind": "ScalarField",
       "alias": null,
-      "name": "number",
       "args": null,
+      "kind": "ScalarField",
+      "name": "number",
       "storageKey": null
     }
-  ]
+  ],
+  "type": "Pokemon"
 };
 (node as any).hash = '899b171bcd0eae3592dbcd2ce333f71b';
 export default node;
